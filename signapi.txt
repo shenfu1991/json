@@ -1,0 +1,128 @@
+/**
+ * 系统核心配置
+ * api_private_key 系统交互初始化公共私钥
+ * token_expire 客户端token有效期
+ */
+$config["api_private_key"] = "b0baef643a1357f8c9cb3e0a625ccafb";
+$config["token_expire"] = 3600;
+
+1、获取token
+request：
+http://api.wisdom.xzh.crazy.weigame.com/oAuth/get_token?device=ios&sign=6e996a2e96ad4403397bf34261fc0c02
+response:
+{
+status: "21",
+data: {
+token: "59EED1F4-417F-A7BD-7A5B-2E75CE973CBC",
+token_expire: "1445929182"
+}
+}
+
+备注：
+htttp header 里面增加 Client-UUid
+device ios/android
+sign : 请求的参数进行自然排序ksort（device=ios ）＋api_private_key（b0baef643a1357f8c9cb3e0a625ccafb） + uuid（header Client-UUid 对应的值），组成的字符串md5
+
+2、重置token
+request:
+http://api.wisdom.xzh.crazy.weigame.com/oAuth/refersh_token?sign=0e7545addfa0523f3b663f6d65421186
+response:
+{
+status: 1,
+data: {
+token: "6E6C1AA5-680F-1185-0EA0-48FC984FD823",
+token_expire: 1445931243
+}
+}
+备注：
+htttp header 里面增加 Client-UUid
+sign : 请求的参数进行自然排序ksort（这里是空的）＋api_private_key（b0baef643a1357f8c9cb3e0a625ccafb） + uuid（header Client-UUid 对应的值），组成的字符串md5
+
+
+3、获取手机验证吗
+request : 
+http://api.wisdom.xzh.crazy.weigame.com/account/mobile_code?mobile＝13564710796&sign=b530f851deef99cd59a48f4c62d63678
+response:
+{
+status: 1,
+data: {
+timeout: 86363,
+msg: "短信激活码已经发送，且没有过有效期，请直接使用或者稍后再重新发送"
+}
+}
+备注：
+mobile 必要使用post方法
+htttp header 里面增加 Client-UUid
+sign 请求的参数进行自然排序ksort（mobile=13564710796 ）+token + uuid（header Client-UUid 对应的值），组成的字符串md5
+测试阶段，查表 wisdom_user_mobile_codes 获取验证码
+
+4、手机注册
+request:
+http://api.wisdom.xzh.crazy.weigame.com/account/signup?mobile＝113564710796&sms_code=208295&password=123456&sign=b7b3676f73618e7f30a0ae05aa951385
+response:
+{
+status: 25,
+data: {
+uid: 25
+}
+}
+备注：
+mobile,sms_code,password 必要使用post方法
+htttp header 里面增加 Client-UUid
+sign:同手机验证吗规则
+
+5、登陆
+request:
+http://api.wisdom.xzh.crazy.weigame.com/account/signin?mobile=13564710796&password=123456&sign=1b7ec859dffd818186080378de1c03d4
+
+{
+status: "25",
+data: {
+uid: "25",
+username: "13564710796"
+}
+}
+
+备注：
+mobile,sms_code 必要使用post方法
+htttp header 里面增加 Client-UUid
+sign:同上
+
+6、获取用户基本信息
+http://api.wisdom.xzh.crazy.weigame.com/account/get_base?uid=25&sign=cb53867b34127dfe90d759548bc1da89
+
+{
+status: "25",
+data: {
+id: "25",
+username: "13564710796",
+email: null,
+mobile: "13564710796",
+ctime: "1445929152",
+is_platform: "0",
+is_lock: "0",
+is_bind: "1",
+from: "client"
+}
+}
+
+备注：
+htttp header 里面增加 Client-UUid
+sign:同上
+
+7、前台使用第三方平台获取的数据进行登入。
+http://api.wisdom.xzh.crazy.weigame.com/account/signinTP?openid=2e7d92b1934525c290fbad6a54b2b38e&username=围巾&platform＝qq&face=http://q.qlogo.cn/qqapp/101241098/D5492542B8FE572B6502E7F45778AD66/100&sign=f8bef510fcade996ae58d6d04117b6a7
+
+{
+status: "29",
+data: {
+uid: "29",
+username: "围巾"
+}
+}
+
+备注：
+openid,username,platform,face 必要使用post方法;platform--qq,weixin,sina
+htttp header 里面增加 Client-UUid
+sign:同上
+
