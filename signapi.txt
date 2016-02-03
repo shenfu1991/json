@@ -1,128 +1,136 @@
-/**
- * 系统核心配置
- * api_private_key 系统交互初始化公共私钥
- * token_expire 客户端token有效期
- */
-$config["api_private_key"] = "b0baef643a1357f8c9cb3e0a625ccafb";
-$config["token_expire"] = 3600;
-
-1、获取token
-request：
-http://api.wisdom.xzh.crazy.weigame.com/oAuth/get_token?device=ios&sign=6e996a2e96ad4403397bf34261fc0c02
-response:
-{
-status: "21",
-data: {
-token: "59EED1F4-417F-A7BD-7A5B-2E75CE973CBC",
-token_expire: "1445929182"
-}
-}
-
-备注：
-htttp header 里面增加 Client-UUid
-device ios/android
-sign : 请求的参数进行自然排序ksort（device=ios ）＋api_private_key（b0baef643a1357f8c9cb3e0a625ccafb） + uuid（header Client-UUid 对应的值），组成的字符串md5
-
-2、重置token
-request:
-http://api.wisdom.xzh.crazy.weigame.com/oAuth/refersh_token?sign=0e7545addfa0523f3b663f6d65421186
-response:
 {
 status: 1,
-data: {
-token: "6E6C1AA5-680F-1185-0EA0-48FC984FD823",
-token_expire: 1445931243
-}
-}
-备注：
-htttp header 里面增加 Client-UUid
-sign : 请求的参数进行自然排序ksort（这里是空的）＋api_private_key（b0baef643a1357f8c9cb3e0a625ccafb） + uuid（header Client-UUid 对应的值），组成的字符串md5
-
-
-3、获取手机验证吗
-request : 
-http://api.wisdom.xzh.crazy.weigame.com/account/mobile_code?mobile＝13564710796&sign=b530f851deef99cd59a48f4c62d63678
-response:
+data: [
 {
-status: 1,
-data: {
-timeout: 86363,
-msg: "短信激活码已经发送，且没有过有效期，请直接使用或者稍后再重新发送"
-}
-}
-备注：
-mobile 必要使用post方法
-htttp header 里面增加 Client-UUid
-sign 请求的参数进行自然排序ksort（mobile=13564710796 ）+token + uuid（header Client-UUid 对应的值），组成的字符串md5
-测试阶段，查表 wisdom_user_mobile_codes 获取验证码
-
-4、手机注册
-request:
-http://api.wisdom.xzh.crazy.weigame.com/account/signup?mobile＝113564710796&sms_code=208295&password=123456&sign=b7b3676f73618e7f30a0ae05aa951385
-response:
+id: "76",
+cat_id: "2",
+view_name: null,
+title: "支付宝“集齐五福”到底在集什么？",
+ctime: "1454464053",
+original: "支付宝“集齐五福”到底在集什么？"
+},
 {
-status: 25,
-data: {
-uid: 25
-}
-}
-备注：
-mobile,sms_code,password 必要使用post方法
-htttp header 里面增加 Client-UUid
-sign:同手机验证吗规则
-
-5、登陆
-request:
-http://api.wisdom.xzh.crazy.weigame.com/account/signin?mobile=13564710796&password=123456&sign=1b7ec859dffd818186080378de1c03d4
-
+id: "75",
+cat_id: "2",
+view_name: null,
+title: "不清楚这七件事，何谈你了解中国古代四大美女之首西施！",
+ctime: "1454463737",
+original: "不清楚这七件事，何谈你了解中国古代四大美女之首西施！"
+},
 {
-status: "25",
-data: {
-uid: "25",
-username: "13564710796"
-}
-}
-
-备注：
-mobile,sms_code 必要使用post方法
-htttp header 里面增加 Client-UUid
-sign:同上
-
-6、获取用户基本信息
-http://api.wisdom.xzh.crazy.weigame.com/account/get_base?uid=25&sign=cb53867b34127dfe90d759548bc1da89
-
+id: "74",
+cat_id: "2",
+view_name: null,
+title: "为春晚备胎十五年，连冯巩都心疼了，她却说……",
+ctime: "1454399188",
+thumbnail: "http://upload-images.jianshu.io/upload_images/1393516-c9e7eed2c896cbb6?imageMogr2/auto-orient/strip",
+original: "为春晚备胎十五年，连冯巩都心疼了，她却说……"
+},
 {
-status: "25",
-data: {
-id: "25",
-username: "13564710796",
-email: null,
-mobile: "13564710796",
-ctime: "1445929152",
-is_platform: "0",
-is_lock: "0",
-is_bind: "1",
-from: "client"
-}
-}
-
-备注：
-htttp header 里面增加 Client-UUid
-sign:同上
-
-7、前台使用第三方平台获取的数据进行登入。
-http://api.wisdom.xzh.crazy.weigame.com/account/signinTP?openid=2e7d92b1934525c290fbad6a54b2b38e&username=围巾&platform＝qq&face=http://q.qlogo.cn/qqapp/101241098/D5492542B8FE572B6502E7F45778AD66/100&sign=f8bef510fcade996ae58d6d04117b6a7
-
+id: "73",
+cat_id: "2",
+view_name: null,
+title: "今年将有11款新游戏支持HTC Vive",
+ctime: "1454397310",
+thumbnail: "http://img1.gtimg.com/digi/pics/hv1/212/215/2015/131080412.jpg",
+original: "今年将有11款新游戏支持HTC Vive"
+},
 {
-status: "29",
-data: {
-uid: "29",
-username: "围巾"
+id: "72",
+cat_id: "2",
+view_name: null,
+title: "你有本事玩手机 你有本事教爹妈玩手机啊！| 科技让生活更美好",
+ctime: "1454397274",
+thumbnail: "http://ww1.sinaimg.cn/bmiddle/90690c6bgw1f0c1fxdgz8j20k00c0gm6.jpg",
+original: "你有本事玩手机 你有本事教爹妈玩手机啊！| 科技让生活更美好"
+},
+{
+id: "71",
+cat_id: "2",
+view_name: null,
+title: "俞敏洪拥抱腾讯，“老炮儿”们各自站队BAT | IT思维",
+ctime: "1454395671",
+thumbnail: "http://www.itsiwei.com/wp-content/uploads/2016/02/0619223020391195.jpg",
+original: "俞敏洪拥抱腾讯，“老炮儿”们各自站队BAT | IT思维"
+},
+{
+id: "70",
+cat_id: "2",
+view_name: null,
+title: "使用 VirtualBox 虚拟机在电脑上运行 Android 4.0 系统，让电脑瞬间变安卓平板！ | 异次元软件下载",
+ctime: "1454395411",
+thumbnail: "http://ips.chotee.com/wp-content/uploads/2012/1d652db45336_CB7D/android-virtualbox_3.jpg",
+original: "使用 VirtualBox 虚拟机在电脑上运行 Android 4.0 系统，让电脑瞬间变安卓平板！ | 异次元软件下载"
+},
+{
+id: "69",
+cat_id: "2",
+view_name: null,
+title: "亚马逊中国 2015 最畅销图书排行榜，你都读过哪些？ | 异次元软件下载",
+ctime: "1454393950",
+thumbnail: "http://ips.chotee.com/wp-content/uploads/2016/news/2943/book.jpg",
+original: "亚马逊中国 2015 最畅销图书排行榜，你都读过哪些？ | 异次元软件下载"
+},
+{
+id: "68",
+cat_id: "2",
+view_name: null,
+title: "解读阿里Q4业绩超预期，为啥股价还大跌了？ | 品途商业评论",
+ctime: "1454393605",
+original: "解读阿里Q4业绩超预期，为啥股价还大跌了？ | 品途商业评论"
+},
+{
+id: "67",
+cat_id: "2",
+view_name: null,
+title: "当好创客，必须会讲故事，产品有用否，看看罗永浩的锤子手机就知道了--锐度--IT时代周刊",
+ctime: "1454393163",
+thumbnail: "/uploadimage/images/20160202105931.jpg",
+original: "当好创客，必须会讲故事，产品有用否，看看罗永浩的锤子手机就知道了--锐度--IT时代周刊"
+},
+{
+id: "66",
+cat_id: "2",
+view_name: null,
+title: "这不是一个什么手机都能玩的VR-LeVR COOL1测评",
+ctime: "1454393056",
+thumbnail: "http://7xj737.com1.z0.glb.clouddn.com/wp-content/uploads/2016/01/DSC_0707-1024x683.jpg",
+original: "这不是一个什么手机都能玩的VR-LeVR COOL1测评"
+},
+{
+id: "65",
+cat_id: "2",
+view_name: null,
+title: "联通“无限流量”进驻北京 流量超过1GB降速至128Kbps_China Unicom 中国联通_cnBeta.COM",
+ctime: "1454392953",
+original: "cnBeta.COM"
+},
+{
+id: "64",
+cat_id: "2",
+view_name: null,
+title: "由CES2016 大会表现出来的未来科技十大趋势 | IT思维",
+ctime: "1454392180",
+thumbnail: "http://www.itsiwei.com/wp-content/uploads/2016/01/Fh6vIcHbCP936c3zfMQOyUCjIst0.jpg",
+original: "由CES2016 大会表现出来的未来科技十大趋势 | IT思维"
+},
+{
+id: "63",
+cat_id: "2",
+view_name: null,
+title: "#你好Unity3D#限制SceneView视图中不可选择游戏对象 | 雨松MOMO程序研究院",
+ctime: "1454392137",
+thumbnail: "http://www.xuanyusong.com/wp-content/uploads/2016/01/QQ20160130234102.png",
+original: "#你好Unity3D#限制SceneView视图中不可选择游戏对象 | 雨松MOMO程序研究院"
+},
+{
+id: "62",
+cat_id: "2",
+view_name: null,
+title: "Google Play 中国版应用商店或将3月发布！应用界面曝光 | 异次元软件下载",
+ctime: "1454392009",
+thumbnail: "http://ips.chotee.com/wp-content/uploads/2016/news/2947/googleplay1.jpg",
+original: "Google Play 中国版应用商店或将3月发布！应用界面曝光 | 异次元软件下载"
 }
+]
 }
-
-备注：
-openid,username,platform,face 必要使用post方法;platform--qq,weixin,sina
-htttp header 里面增加 Client-UUid
-sign:同上
-
