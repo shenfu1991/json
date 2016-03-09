@@ -1,7 +1,14 @@
 {
-    "Accept-Ranges" = bytes;
-    "Access-Control-Allow-Origin" = "*";
-    "Cache-Control" = "max-age=300";
-    Connection = "keep-alive";
-    "Content-Encoding" = gzip;
+status: 1,
+data: {
+id: "17",
+uid: "47",
+name: "不顾一切",
+description: "《不顾一切》是张惠妹的个人第七张音乐专辑，由丰华唱片公司于2000年12月发行，该专辑在美国、新加坡、台湾三地制作，由六位制作人携手合作而成。由《一夜情》等10首歌曲组成，另外碟中加送一张反盗录VCD，收录2首主打歌卡拉OK版，其他精采内容，包括有张惠妹自述之音乐、生活、感情等各种心情点滴全纪录。 本番带来的是钱嘉欣带来的翻唱版",
+type: "video",
+study_nums: "39",
+status: "1",
+img_large: "img/course/2015/09/24/18/46eb5243a1c377abf799a02e4b7153b8.png",
+img_medium: "img/course/2015/09/24/18/46eb5243a1c377abf799a02e4b7153b8.png"
+}
 }
