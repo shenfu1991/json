@@ -1,1 +1,7 @@
-上善若水，猪弟
+{
+    "Accept-Ranges" = bytes;
+    "Access-Control-Allow-Origin" = "*";
+    "Cache-Control" = "max-age=300";
+    Connection = "keep-alive";
+    "Content-Encoding" = gzip;
+}
