@@ -1,21 +1,20 @@
 {
   "images" : [
     {
-      "idiom" : "universal",
-      "scale" : "1x"
+      "adUnitID" : "ca-app-pub-3940256099942544/2934735716",
     },
     {
       "idiom" : "universal",
       "scale" : "2x",
-      "filename" : "icon-1024@2x.png"
+      "adUnitID" : "ca-app-pub-3940256099942544/2934735716",
     },
     {
       "idiom" : "universal",
-      "scale" : "3x"
+      "adUnitID" : "ca-app-pub-3940256099942544/2934735716",
     }
   ],
   "info" : {
     "version" : 1,
-    "author" : "xcode"
+     "adUnitID" : "ca-app-pub-3940256099942544/2934735716",
   }
 }
