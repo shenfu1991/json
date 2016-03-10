@@ -1,21 +1,13 @@
 {
-  "images" : [
+  "data" : [
     {
-      "idiom" : "universal",
-      "scale" : "1x"
+      "adUnitID" : "ca-app-pub-3940256099942544/2934735716"
     },
     {
-      "idiom" : "universal",
-      "filename" : "Dark_Setting_Bg3_Bottom_Highlight@2x.png",
-      "scale" : "2x"
+      "adUnitID" : "ca-app-pub-3940256099942544/2934735716"
     },
     {
-      "idiom" : "universal",
-      "scale" : "3x"
+      "adUnitID" : "ca-app-pub-3940256099942544/2934735716",
     }
-  ],
-  "info" : {
-    "version" : 1,
-    "author" : "xcode"
-  }
+  ]
 }
