@@ -16,6 +16,4 @@
 #猫咪
 ![image](https://github.com/mengzhihoing/json/blob/master/2.gif)
 
-栗子
 
-![image](https://github.com/lfb-cd/gif/blob/master/UDPTrans2016-03-11%2017_15_20.gif)
