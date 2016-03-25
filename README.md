@@ -19,3 +19,7 @@
 <font color=red>内容</font> 
 <font color="white">要反白的文字<font>
 
+<audio src="/i/song.ogg" controls="controls">
+Your browser does not support the audio element.
+</audio>
+
