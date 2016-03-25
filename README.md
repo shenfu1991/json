@@ -7,7 +7,7 @@
 
 [下个版本将添加：日卦、月卦、年卦、任意物卦、人生小运、人生大运，尽请期待](http://www.bai.com)。
 
-###[android版本](http://www.baidu.com)
+###[android版本](http://www.the9Cloud.com)
 
 
 
@@ -16,10 +16,7 @@
 #猫咪
 ![image](https://github.com/mengzhihoing/json/blob/master/2.gif)
 
-<font color=red>内容</font> 
-<font color="white">要反白的文字<font>
 
-<audio src="/i/song.ogg" controls="controls">
-Your browser does not support the audio element.
+<audio src="https://github.com/mengzhihoing/json/blob/master/Jewel.mp3" controls="controls">Jewel
 </audio>
 
