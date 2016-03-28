@@ -5,18 +5,8 @@
 
 最新版本：V 1.0
 
-[下个版本将添加：日卦、月卦、年卦、任意物卦、人生小运、人生大运，尽请期待](http://www.bai.com)。
-
-###[android版本](http://www.the9Cloud.com)
+###[下载地址](https://itunes.apple.com/us/app/le-xue-cheng-xu-zhuan-zhu/id1087260425?l=zh&ls=1&mt=8)
 
 
-
-#[评分](http://www.the9.com)
-
-#猫咪
-![image](https://github.com/mengzhihoing/json/blob/master/2.gif)
-
-
-<audio src="https://github.com/mengzhihoing/json/blob/master/Jewel.m4r" controls="controls">Jewel
-</audio>
+#[评分](https://itunes.apple.com/us/app/le-xue-cheng-xu-zhuan-zhu/id1087260425?l=zh&ls=1&mt=8)
 
