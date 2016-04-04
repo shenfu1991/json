@@ -1,12 +1,13 @@
 # 伏羲易 iOS
 
-### Swift版本 ：https://github.com/lfb-cd/UDPTrans-Swift
+###有任何问题请通过以下方式联系：
+QQ:337426284
+e-mail:xuanyuanshenfu@outlook.com
 
+想知道你的姓名属于64卦中哪一卦？伏羲易告诉你！  
+想知道哪些颜色、哪些数字对自己有利？伏羲易告诉你！ 
+想知道自己的本命卦、成功卦、失败卦、衰变卦？伏羲易告诉你！  
 
-最新版本：V 1.0
-
-###[下载地址](https://itunes.apple.com/us/app/le-xue-cheng-xu-zhuan-zhu/id1087260425?l=zh&ls=1&mt=8)
-
-
-#[评分](https://itunes.apple.com/us/app/le-xue-cheng-xu-zhuan-zhu/id1087260425?l=zh&ls=1&mt=8)
-
+![image](https://raw.githubusercontent.com/mengzhihoing/json/master/1.png)  
+![image](https://raw.githubusercontent.com/mengzhihoing/json/master/2.png)  
+![image](https://raw.githubusercontent.com/mengzhihoing/json/master/3.png)
