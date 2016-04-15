@@ -8,9 +8,11 @@ QQ:3386345079
 ``
 
 ``
-e-mail:xuanyuantiandipan@163.com    
+e-mail:xuanyuantiandipan@163.com      
 ``     
+  
 
+### 伏羲易 qq群523683078，欢迎志同道合者加入，
 
 
 
