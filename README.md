@@ -28,10 +28,14 @@ e-mail:xuanyuantiandipan@163.com
 ### + 想知道你的姓名属于64卦中哪一卦？伏羲易告诉你！    
 ### + 想知道哪些颜色、哪些数字对自己有利？伏羲易告诉你！   
 ### + 想知道自己的本命卦、成功卦、失败卦、衰变卦？伏羲易告诉你！
-
-
+   
+    
+    
+       
+             
 ###在通知中心显示今日宜忌操作：
-按下图红色圈操作，
+按下图红色圈操作，  
+
 1、点击“1个新的widget可用”     
 ![image](https://raw.githubusercontent.com/mengzhihoing/json/master/e1.jpg)
 
