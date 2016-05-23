@@ -30,6 +30,18 @@ e-mail:xuanyuantiandipan@163.com
 ### + 想知道自己的本命卦、成功卦、失败卦、衰变卦？伏羲易告诉你！
 
 
+###在通知中心显示今日宜忌操作：
+按下图红色圈操作，
+1、点击“1个新的widget可用”     
+![image](https://raw.githubusercontent.com/mengzhihoing/json/master/e1.jpg)
+
+2、点击“今日宜忌”旁边的绿色+号       
+![image](https://raw.githubusercontent.com/mengzhihoing/json/master/e2.jpg)  
+
+3、点击“完成”按钮       
+![image](https://raw.githubusercontent.com/mengzhihoing/json/master/e3.jpg)  
+
+
 
 ![image](https://raw.githubusercontent.com/mengzhihoing/json/master/1.png)
 
