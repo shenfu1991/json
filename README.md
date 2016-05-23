@@ -44,6 +44,9 @@ e-mail:xuanyuantiandipan@163.com
 
 3、点击“完成”按钮       
 ![image](https://raw.githubusercontent.com/mengzhihoing/json/master/e3.jpg)  
+   
+4、下拉通知中心  
+![image](https://raw.githubusercontent.com/mengzhihoing/json/master/4s.png)    
 
 
 
