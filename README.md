@@ -1,6 +1,9 @@
 # 伏羲易-易经姓名预测分析
 
-[App Store下载](https://itunes.apple.com/cn/app/fu-xi-yi-yi-jing-xing-ming/id1099808769?mt=8)
+[App Store下载](https://itunes.apple.com/cn/app/fu-xi-yi-yi-jing-xing-ming/id1099808769?mt=8)  
+  
+[android版下载](https://raw.githubusercontent.com/mengzhihoing/json/master/fuxiyi.apk)
+
 
 ###有任何问题请通过以下方式联系：
 ``
