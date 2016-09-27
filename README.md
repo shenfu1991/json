@@ -2,7 +2,7 @@
 
 [App Store下载](https://itunes.apple.com/cn/app/fu-xi-yi-yi-jing-xing-ming/id1099808769?mt=8)  
   
-[android版下载](https://raw.githubusercontent.com/mengzhihoing/json/master/fuxiyi.apk)  
+[android版下载](https://raw.githubusercontent.com/mengzhihoing/json/master/fuxiyi1.1.apk)  
   
 shadowsocks翻墙神器[ss下载](https://raw.githubusercontent.com/mengzhihoing/json/master/ss.apk)
 
